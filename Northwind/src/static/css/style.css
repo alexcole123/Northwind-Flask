@@ -1,0 +1,98 @@
+/* General Styling: */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+/* Layout */
+.layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% 85% 5%;
+}
+
+.layout,
+.layout>* {
+    border: 1px solid;
+}
+
+header, footer {
+    grid-column: span 6;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+header > *, footer > * {
+    width: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+main {
+    grid-column: span 5;
+    padding: 20px;
+    overflow: auto;
+}
+
+.products-table td {
+    vertical-align: middle; /* Thanks to NivGPT */
+}
+
+.products-table td:first-child {
+    text-align: left;
+}
+
+.products-table img {
+    width: 80px;
+    height: 60px;
+    border: 1px solid;
+}
+
+/* Form */
+.fancy-form {
+    width: 400px;
+    margin: auto;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+    text-align: left;
+}
+
+.fancy-form input {
+    margin-bottom: 20px;
+}
+
+.active {
+    color: green;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+}
+
+.auth {
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-left: 10px;
+}

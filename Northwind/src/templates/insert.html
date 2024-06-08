@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Add Product{% endblock title %}
+
+{% block content %}
+
+<form method="post" class="fancy-form" enctype="multipart/form-data">
+
+    <label>Name: </label>
+    <input type="text" name="name" class="form-control" required minlength="2" maxlength="100">
+
+    <label>Price: </label>
+    <input type="number" name="price" step="0.01" class="form-control" required min="0" max="1000">
+
+    <label>Stock: </label>
+    <input type="number" name="stock" class="form-control" required min="0" max="1000">
+
+    <label>Image: </label>
+    <input type="file" name="image" accept="image/*" class="form-control" required>
+
+    <button class="btn btn-primary w-100">Add</button>
+    
+</form>
+
+{% endblock content %}

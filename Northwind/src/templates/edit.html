@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}Edit Product{% endblock title %}
+
+{% block content %}
+
+<form method="post" class="fancy-form" enctype="multipart/form-data">
+
+    <input type="hidden" name="id" value="{{product.id}}">
+
+    <label>Name: </label>
+    <input type="text" name="name" class="form-control" value="{{product.name}}" required minlength="2" maxlength="100">
+
+    <label>Price: </label>
+    <input type="number" name="price" step="0.01" class="form-control" value="{{product.price}}" required min="0" max="1000">
+
+    <label>Stock: </label>
+    <input type="number" name="stock" class="form-control" value="{{product.stock}}" required min="0" max="1000">
+
+    <label>Image: </label>
+    <input type="file" name="image" class="form-control" accept="image/*">
+
+    <button class="btn btn-primary w-100">Update</button>
+    
+</form>
+
+{% endblock content %}

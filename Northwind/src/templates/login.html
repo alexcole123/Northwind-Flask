@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock title %}
+
+{% block content %}
+
+<form method="post" class="fancy-form">
+
+    <label>Email: </label>
+    <input type="email" name="email" value="{{credentials.email}}" class="form-control" required minlength="5" maxlength="100">
+
+    <label>Password: </label>
+    <input type="password" name="password" value="{{credentials.password}}" class="form-control" required minlength="4" maxlength="100">
+
+    <button class="btn btn-primary w-100">Login</button>
+    
+</form>
+
+{% endblock content %}

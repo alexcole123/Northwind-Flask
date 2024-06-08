@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock title %}
+
+{% block content %}
+
+<form method="post" class="fancy-form">
+
+    <label>First name: </label>
+    <input type="text" name="first_name" value="{{user.first_name}}" class="form-control" required minlength="2" maxlength="20">
+
+    <label>Last name: </label>
+    <input type="text" name="last_name" value="{{user.last_name}}" class="form-control" required minlength="2" maxlength="30">
+
+    <label>Email: </label>
+    <input type="email" name="email" value="{{user.email}}" class="form-control" required minlength="5" maxlength="100">
+
+    <label>Password: </label>
+    <input type="password" name="password" value="{{user.password}}" class="form-control" required minlength="4" maxlength="100">
+
+    <button class="btn btn-primary w-100">Register</button>
+    
+</form>
+
+{% endblock content %}

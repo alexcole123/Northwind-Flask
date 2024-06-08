@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}Northwind | Home{% endblock title %}
+
+{% block content %}
+
+<h2>Welcome to Northwind Website!</h2>
+
+<img src="{{ url_for('static', filename='images/logo.jpg') }}">
+
+{% endblock content %}

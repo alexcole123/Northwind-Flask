@@ -1,0 +1,40 @@
+2024-02-09 10:13:51.535148
+MySQL Connection not available.
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 10:14:55.449552
+MySQL Connection not available.
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 10:14:55.644609
+MySQL Connection not available.
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 10:14:56.335463
+MySQL Connection not available.
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 10:14:58.971104
+MySQL Connection not available.
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 11:36:46.741134
+429 Too Many Requests: 10 per 1 minute
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 11:36:46.974951
+429 Too Many Requests: 10 per 1 minute
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 11:36:47.206187
+429 Too Many Requests: 10 per 1 minute
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 12:26:03.505389
+id 1234 not found.
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
+2024-02-09 12:37:44.091626
+'StatusCode' object has no attribute 'strip'
+User ID: 8, User Email: bart@gmail.com
+---------------------------------
